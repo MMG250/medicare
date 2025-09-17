@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicare Healthcare</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> -->
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header class="header flex items-center" id="main-header">
+        <div class="container">
+            <div class="flex items-center justify-between">
+
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="./assets/images/logo.png" alt="logo" />
+                    </a>
+                </div>
+
+                <!-- Navigation -->
+                <div class="navigation" id="menu">
+                    <ul class="menu flex items-center gap">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="doctors.html">Find Doctor</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Right Nav -->
+                <div class="flex items-center gap-4">
+                    <!-- Avatar (optional/hidden) -->
+                    <div class="hidden">
+                        <a href="#">
+                            <figure class="avatar">
+                                <img src="./assets/images/avatar-icon.png" alt="User Avatar" />
+                            </figure>
+                        </a>
+                    </div>
+
+                    <!-- Login Button -->
+                    <a href="login.html">
+                        <button class="login-btn">Login</button>
+                    </a>
+
+                    <!-- Mobile Menu Icon -->
+                    <span class="mobile-menu" id="menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- ======= JS for Sticky Header and Menu Toggle ======= -->
+    <script>
+        // Sticky header
+        window.addEventListener("scroll", function () {
+            const header = document.getElementById("main-header");
+            if (window.scrollY > 80) {
+                header.classList.add("sticky-header");
+            } else {
+                header.classList.remove("sticky-header");
+            }
+        });
+
+        // Toggle menu
+        document.getElementById("menu-toggle").addEventListener("click", function () {
+            document.getElementById("menu").classList.toggle("show-menu");
+        });
+    </script>
+
+    <!-- About Section -->
+    <section id="about">
+        <!-- <div class="about-container">
+            <h1>Welcome to Medicare Healthcare</h1>
+            <h2>About Medicare Healthcare</h2>
+            <p>At Medicare Healthcare, we are committed to delivering exceptional medical services to our community.
+                With a patient-first approach, our mission is to provide compassionate, comprehensive, and accessible
+                healthcare to individuals and families of all ages. We believe in treating every patient with dignity
+                and respect, ensuring a safe and welcoming environment for healing and wellness.</p>
+        </div> -->
+
+        <div class="about-container">
+            <div class="about-left-container">
+                <h1>We help patient live a health, longer life.</h1>
+                <p>At Medicare Healthcare, we are committed to delivering exceptional medical services to our community.
+                    With a patient-first approach, our mission is to provide compassionate, comprehensive, and
+                    accessible
+                    healthcare to individuals and families of all ages. We believe in treating every patient with
+                    dignity
+                    and respect, ensuring a safe and welcoming environment for healing and wellness.
+                </p>
+                <button class="login-btn  ">Request appointment</button>
+
+                <div class="about-content-container">
+                    <div class="abou-content-header">
+                        <h1>30 +</h1>
+                        <p>Years of Experience</p>
+                    </div>
+                    <div class="abou-content-header">
+                        <h1>15 +</h1>
+                        <p>Clinic location</p>
+                    </div>
+                    <div class="abou-content-header">
+                        <h1>100 %</h1>
+                        <p>patient satisfation</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-right-container">
+                <img src="./assets/images/hero-img01.png" alt="about image" />
+                <div class="about-images">
+                    <img src="./assets/images/hero-img02.png" alt="about image" />
+                    <img src="./assets/images/hero-img03.png" alt="about image" />
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Services Section -->
+    <section id="service">
+        <h2>Our Services</h2>
+        <p>Medicare Healthcare offers a wide range of services to meet your health needs, including:</p>
+        <ul>
+            <li>General and Family Medicine</li>
+            <li>Pediatrics and Child Health</li>
+            <li>Women's Health and Gynecology</li>
+            <li>Cardiology and Heart Care</li>
+            <li>Laboratory and Diagnostic Services</li>
+            <li>Vaccinations and Preventive Care</li>
+        </ul>
+        <p>Our dedicated team of healthcare professionals works collaboratively to ensure that you receive the highest
+            quality care at every stage of your life.</p>
+    </section>
+
+    <!-- Find a Doctor Section -->
+    <section id="finddoctor">
+        <h2>Find a Doctor</h2>
+        <p>Looking for a trusted healthcare provider? Use our doctor directory to search by name, specialty, or
+            location. We have a team of qualified and experienced physicians ready to support your healthcare journey.
+        </p>
+        <p>Whether you need a routine check-up or specialized care, we’ll help you connect with the right doctor who
+            fits your needs. Your health is our top priority, and we are here to guide you every step of the way.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions or need assistance? Our team is here to help.</p>
+        <p>
+            <strong>Address:</strong> 123 Health Avenue, Wellness City, 56789<br>
+            <strong>Phone:</strong> (123) 456-7890<br>
+            <strong>Email:</strong> contact@medicarehealth.com
+        </p>
+        <p>Feel free to reach out to us to schedule an appointment, speak with a medical professional, or learn more
+            about our services. We look forward to hearing from you!</p>
+    </section>
+
+</body>
+
+</html>

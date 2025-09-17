@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
+    aspect-ratio: 1/1;
+    /* object-fit: contain;   */
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body,
+html {
+    scroll-behavior: smooth;
+}
+
+/* Base styles (optional, adapt as needed) */
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.gap {
+    gap: 2.7rem;
+}
+
+.gap-4 {
+    gap: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Header styling */
+.header {
+    background-image: url(./assets/images/Blur.png);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    height: 90px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.menu li a:hover {
+    color: #0a58ca;
+    /* Replace with your primary color */
+}
+
+/* Sticky header */
+.sticky-header {
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Login button */
+.login-btn {
+    height: 44px;
+    padding: 0 1.5rem;
+    border: none;
+    border-radius: 50px;
+    background-color: #0a58ca;
+    /* primaryColor */
+    width: fit-content;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Avatar */
+.avatar {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.avatar img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* Mobile Menu Icon */
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #0a58ca;
+}
+
+/* Show menu (for toggle) */
+.show-menu {
+    display: block !important;
+}
+
+
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        background: white;
+        position: absolute;
+        top: 90px;
+        right: 0;
+        padding: 1rem;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+}
+
+
+#about,
+#service,
+#finddoctor,
+#contact {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.about-container {
+
+    width: 80%;
+    margin: 0 auto;
+    color: black;
+
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+
+}
+
+.about-left-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.about-left-container h1{
+    font-size: 3rem;
+    width: 60%;
+    font-weight: 900;
+}
+
+.about-content-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.abou-content-header h1{
+    font-size: 2rem;
+    font-weight: 600;
+
+}
+.about-right-container{
+    /* position: relative; */
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+/* .about-images{
+    position: absolute;
+} */
+
+#about {
+    width: 100%;
+    height: 100vh;
+    /* background-image: url(../assets/about.jpg); */
+    background-image: url(../assets/images/hero-bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
