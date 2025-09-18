@@ -197,6 +197,10 @@ html {
 .abou-content-header h1{
     font-size: 2rem;
     font-weight: 600;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
 
 }
 .about-right-container{
@@ -220,3 +224,161 @@ html {
     background-size: cover;
 
 }
+
+.abou-content-header h1::after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 50%;
+    margin: auto;
+    border-radius: 3px;
+}
+
+.abou-content-header:nth-child(1) h1::after {
+    background: orange;
+}
+
+.abou-content-header:nth-child(2) h1::after {
+    background: purple;
+}
+
+.abou-content-header:nth-child(3) h1::after {
+    background: teal;
+}
+
+.Circle-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #0a0000;
+  text-decoration: none;
+  font-size: 1.5rem;
+  line-height: 1;
+  transition: background-color 0.3s ease;
+}
+
+
+.services-container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.upper-container {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.upper-container h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.upper-container p {
+  font-size: 1rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+.upper-content {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+.find-doctor,
+.find-location,
+.book-appointment {
+    background-color: #fff;
+    padding: 60px 40px;
+    border-radius: 20px;
+    text-align: center;
+    flex: 1;
+}
+
+.upper-content img {
+  width: 250px;
+  height: auto;
+  margin-bottom: 60px;
+  gap: 80px;
+}
+
+.upper-content h2 {
+  font-size: 1.5rem;
+  color: #01080f;
+  margin-bottom: 10px;
+}
+
+.upper-content p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.lower-container {
+  /*flex-direction: column;
+  align-items: center;
+  gap: 40px;*/
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10rem;
+
+}
+
+.doctor {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.doctor > img:first-child {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.doctor > img:nth-child(2) {
+  bottom: 20px;
+  left: 20px;
+  width: 160px;
+  border-radius: 8px;
+}
+
+.about-doctor {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.about-doctor h1 {
+  font-size: 2.5rem;
+  color: #0e0101f5;
+  margin-bottom: 20px;
+}
+
+.about-doctor p {
+  font-size: 1rem;
+  color: #0e0101f5;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.upper-content {
+    justify-content: space-between;
+
+}
+
+
+
+
+
+
